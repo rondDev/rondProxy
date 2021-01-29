@@ -226,9 +226,7 @@ namespace rondProxy
                 {
                     writer.WriteLine(LINE);
                 }
-
             }
-
         }
 
         public static string Base64Decode(string base64EncodedData)
