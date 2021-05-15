@@ -224,6 +224,20 @@ namespace rondProxy
             {
                 using (StreamWriter writer = new StreamWriter($"./Proxies.txt", append: true))
                 {
+                    string cleaned = "";
+                    try
+                    {
+                        cleaned = LINE.Replace("\n", "");
+                    }
+                    catch
+                    {
+                    }
+                    try
+                    {
+                        cleaned = cleaned.Replace("\r", "");
+                    }
+                    catch
+                    {}
                     writer.WriteLine(LINE);
                 }
             }
