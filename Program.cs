@@ -238,7 +238,7 @@ namespace rondProxy
                     }
                     catch
                     {}
-                    writer.WriteLine(LINE);
+                    writer.WriteLine(cleaned);
                 }
             }
         }
